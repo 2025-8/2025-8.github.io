@@ -13,6 +13,12 @@
                 src: url("./font/font.otf") format("opentype");
             }
         </style>
+        <script>
+            var info = navigator.userAgent;
+            if (/mobile/i.test(info)){
+                window.location.replace("./index_m.html");
+            }
+        </script>
     </head>
     <body background="./bgs/bg_1.jpg" style="background-repeat:no-repeat; background-attachment:fixed; background-size:100% 100%; ">
         
