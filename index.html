@@ -5,17 +5,21 @@
         <style type="text/css">
             #root{  /*最底层块样式*/
                 background-color:hwb(0 73% 27% / 0.486);
-                /* background-image: linear-gradient(to bottom right,hwb(173 83% 0% / 0.486),hwb(198 19% 59% / 0.486)); */
                 margin-top: 30px;
                 width: 1024px;
             }
             #school{    /*学校简介块样式*/
                 background-color: rgba(101, 128, 185, 0.478);
                 width: 1000px;
-                height: 1000px;rgba(84, 167, 180, 0.478)
+                height: 1000px;
+            }
+            #class{
+                background-color: rgba(151, 126, 1, 0.457);
+                width: 1000px;
+                height: 1000px;
             }
             .texts{     /*文本段落样式*/
-                text-indent: 2 em;
+                text-indent: 2em;
                 font-size: size;
                 font-family: "微软雅黑";
             }
@@ -73,8 +77,13 @@
                 <!--学校块结束-->
                 <br>
                 <hr color="black" style="width: 80%;height: 0.1px;"><hr style=" width: 80%;height: 0.1px;" color="black">
-                <br >
-
+                <br>
+                <div id="class"> <!--班级简介块-->
+                    <div style="position: absolute;margin-left: 10px;margin-top: 30px;background-color: rgba(179, 182, 0, 0.581);width: 984px;height: 45px;">
+                        <div style="text-align: left;position: absolute;margin-left: 10px;margin-top: 10px;background-color: rgba(171, 116, 15, 0.581);width: 984px;height:40px">
+                            <h2 style="margin-left: 15px;">班级简介</h2></div></div>
+                </div>
+                <br>
             </div>
 
             <div style="text-align: center;background-color: rgba(0, 0, 0, 0.704);width: 1024px;margin:auto;">
