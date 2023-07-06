@@ -1,109 +1,169 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>经外2025届8班</title>
-        <style type="text/css">
-            #root{  /*最底层块样式*/
-                background-color:hwb(0 73% 27% / 0.486);
-                margin-top: 30px;
-                width: 1024px;
-            }
-            #school{    /*学校简介块样式*/
-                background-color: rgba(101, 128, 185, 0.478);
-                width: 1000px;
-                height: 1000px;
-            }
-            #class{
-                background-color: rgba(151, 126, 1, 0.457);
-                width: 1000px;
-                height: 1000px;
-            }
-            .texts{     /*文本段落样式*/
-                text-indent: 2em;
-                font-size: size;
-                font-family: "微软雅黑";
-            }
-        </style>
-        <script>
-            //判断设备
-            var info = navigator.userAgent;
-            if (/mobile/i.test(info)){
-                window.location.replace("./index_m.html");
-            }
-        </script>
-    </head>
-    <body background="./bgs/bg_1.jpg" style="background-repeat:no-repeat; background-attachment:fixed; background-size:100% 100%; ">
-        <img src="./imgs/badge_school.png" style="margin-left:20px;margin-top:15px">    <!--校徽图片-->
-        <center>
-            <div id="root"> <!--最底层块-->
-                 <br>
-                <div id="school">   <!--学校简介块-->
-                    <div style="position: absolute;margin-left: 10px;margin-top: 30px;background-color: rgba(87, 135, 197, 0.581);width: 984px;height: 45px;">
-                        <div style="text-align: left;position: absolute;margin-left: 10px;margin-top: 10px;background-color: rgba(81, 91, 155, 0.56);width: 984px;height:40px">
-                            <h2 style="margin-left: 15px;">学校简介</h2>
-                            <p class="texts" style="margin-left: 20px;margin-right: 340px">
-                                郑州经济技术开发区外国语学校（简称经开区外国语学校），由国家郑州经济技术开发区管委会投资兴建，是一所高规格、高起点、高品质的现代化全寄宿公办初中。学校位于经开区滨河国际新城第十八大街与经南八路交叉口东南角，占地92亩，总建筑面积9万多平方米。
-                            </p>
-                            <br>
-                            <p class="texts" style="margin-left: 20px;margin-right: 20px;margin-right: 340px;">
-                                学校树木林立，错落有致，亭廊轩榭，卧石小径，（下沉式庭院、两大名人塑像广场、历史年代广场和八大城市广场在建中）一步一景，相映成趣，环境熏染，文化育人，莘莘学子漫步其中，涵养气质，塑造人格。
-                            </p>
-                            <br>
-                            <p class="texts" style="margin-left: 340px;margin-right: 20px">
-                                学校硬件设施先进，功能完备，报告厅、室内体育馆、田径场和数字化专业教室，让学生全面发展，展示自我，也为学生在知识海洋深度探索提供了空间。学生宿舍上床下桌，环境整洁清静。
-                            </p>
-                            <br>
-                            <p class="texts" style="margin-left: 340px;margin-right: 20px">
-                                学校教育理念先进，拥有一个由特、高级教师，省市级名师，教育教学专家，国家级省级优质课一等奖获得者，中招命题组成员引领的教师团队。
-                            </p>
-                            <br>
-                            <p class="texts" style="margin-left: 20px;margin-right: 350px;margin-top: 50px;">
-                                学校以“德才兼备 外语突出 国际视野”为办学目标，着力培养全面发展的人。学校在文理并重基础上，着力打造英语特色，开设特色英语课程和外教口语课，实行全英小班教学，双师双课程。设有民族舞、街舞、乒乓球、啦啦操、合唱、美术、文学社、演讲、阅读、模拟联合国、编程、开心农场等门类齐全的社团和校本课程。
-                            </p>
-                            <br>
-                            <p class="texts" style="margin-left: 20px;margin-right: 350px">
-                                因为相信，所以看见。开拓进取的经外人坚信：幸福是奋斗出来的。他们践行“奉献 智慧 陪伴”的教风，致力于培养“规则 自主 高效”的学生，他们拼搏，创新，担当，正在全力打造郑州市乃至河南省的高品质初中教育。
-                            </p>
-                        </div>
-                    </div>
-                    <div style="width: 100%;height: 500px;">    <!--图片块-->
-                        <p style="text-align: right;"><img src="./imgs/4.jpg" style="margin-top: 100px; width: 300px;height: auto;margin-right: 20px;border-radius:10px"></p>
-                        
-                        <p style="text-align: left;"></p><img src="./imgs/7.jpg" style="margin-top: 10px; width: 300px;height: auto;margin-right: 650px;border-radius:10px"></p>
-                        
-                        <p style="text-align: right;"></p><img src="./imgs/5.jpg" style="margin-top:10px; width: 300px;height: auto;border-radius:10px;margin-left: 650px"></p>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>经外2025届8班</title>
+    <style type="text/css">
+        #root {
+            /*最底层块样式*/
+            background-color: hwb(0 73% 27% / 0.486);
+            margin-top: 150px;
+            width: 1024px;
+        }
+
+        #school {
+            /*学校简介块样式*/
+            background-color: rgba(101, 128, 185, 0.478);
+            width: 1000px;
+            height: 1000px;
+        }
+        #menu{
+            position: fixed;
+            width: 120px;
+            height: 120px;
+            border: 3px solid rgba(148, 212, 183, 0.482);
+            background-color: rgba(114, 155, 156, 0.44);
+            margin-left: 88%;
+            float: right;
+            z-index: 9999;
+        }
+        .menus{
+            display: block;
+            width: 120px;
+            height: 30px;
+            background-color: rgba(255, 255, 255, 0);
+            color: black;
+            text-decoration: none;
+            text-align: center;
+        }
+        .menus:hover{
+            background-color: #4891a16e;
+        }
+        #menu-ul{
+            list-style-type: none;
+            /* margin: 0; */
+            padding: 0;
+        }
+        #class {
+            background-color: rgba(151, 126, 1, 0.457);
+            width: 1000px;
+            height: 1000px;
+        }
+
+        .texts {
+            /*文本段落样式*/
+            text-indent: 2em;
+            font-size: size;
+            font-family: "微软雅黑";
+        }
+    </style>
+    <script>
+        //判断设备
+        var info = navigator.userAgent;
+        if (/mobile/i.test(info)) {
+            window.location.replace("./index_m.html");
+        }
+    </script>
+</head>
+
+<body background="./bgs/bg_1.jpg"
+    style="background-repeat:no-repeat; background-attachment:fixed; background-size:100% 100%; ">
+    <img src="./imgs/badge_school.png" style="margin-left:20px;float: left;"> <!--校徽图片-->
+    <div id="menu"> <!--导航栏-->
+        <ul id="menu-ul">
+            <li><a class="menus" href="#school">学校简介</a></li>
+            <li><a class="menus" href="#class">班级简介</a></li>
+        </ul>
+    </div>
+    <center>
+        <br>
+        <div id="root"> <!--最底层块-->
+            <br>
+            <div id="school"> <!--学校简介块-->
+                <div
+                    style="position: absolute;margin-left: 10px;margin-top: 30px;background-color: rgba(87, 135, 197, 0.581);width: 984px;height: 45px;">
+                    <div
+                        style="text-align: left;position: absolute;margin-left: 10px;margin-top: 10px;background-color: rgba(81, 91, 155, 0.56);width: 984px;height:40px">
+                        <h2 style="margin-left: 15px;">学校简介</h2>
+                        <p class="texts" style="margin-left: 20px;margin-right: 340px">
+                            郑州经济技术开发区外国语学校（简称经开区外国语学校），由国家郑州经济技术开发区管委会投资兴建，是一所高规格、高起点、高品质的现代化全寄宿公办初中。学校位于经开区滨河国际新城第十八大街与经南八路交叉口东南角，占地92亩，总建筑面积9万多平方米。
+                        </p>
+                        <br>
+                        <p class="texts" style="margin-left: 20px;margin-right: 20px;margin-right: 340px;">
+                            学校树木林立，错落有致，亭廊轩榭，卧石小径，（下沉式庭院、两大名人塑像广场、历史年代广场和八大城市广场在建中）一步一景，相映成趣，环境熏染，文化育人，莘莘学子漫步其中，涵养气质，塑造人格。
+                        </p>
+                        <br>
+                        <p class="texts" style="margin-left: 340px;margin-right: 20px">
+                            学校硬件设施先进，功能完备，报告厅、室内体育馆、田径场和数字化专业教室，让学生全面发展，展示自我，也为学生在知识海洋深度探索提供了空间。学生宿舍上床下桌，环境整洁清静。
+                        </p>
+                        <br>
+                        <p class="texts" style="margin-left: 340px;margin-right: 20px">
+                            学校教育理念先进，拥有一个由特、高级教师，省市级名师，教育教学专家，国家级省级优质课一等奖获得者，中招命题组成员引领的教师团队。
+                        </p>
+                        <br>
+                        <p class="texts" style="margin-left: 20px;margin-right: 350px;margin-top: 50px;">
+                            学校以“德才兼备 外语突出
+                            国际视野”为办学目标，着力培养全面发展的人。学校在文理并重基础上，着力打造英语特色，开设特色英语课程和外教口语课，实行全英小班教学，双师双课程。设有民族舞、街舞、乒乓球、啦啦操、合唱、美术、文学社、演讲、阅读、模拟联合国、编程、开心农场等门类齐全的社团和校本课程。
+                        </p>
+                        <br>
+                        <p class="texts" style="margin-left: 20px;margin-right: 350px">
+                            因为相信，所以看见。开拓进取的经外人坚信：幸福是奋斗出来的。他们践行“奉献 智慧 陪伴”的教风，致力于培养“规则 自主
+                            高效”的学生，他们拼搏，创新，担当，正在全力打造郑州市乃至河南省的高品质初中教育。
+                        </p>
                     </div>
                 </div>
-                <!--学校块结束-->
-                <br>
-                <hr color="black" style="width: 80%;height: 0.1px;"><hr style=" width: 80%;height: 0.1px;" color="black">
-                <br>
-                <div id="class"> <!--班级简介块-->
-                    <div style="position: absolute;margin-left: 10px;margin-top: 30px;background-color: rgba(179, 182, 0, 0.581);width: 984px;height: 45px;">
-                        <div style="text-align: left;position: absolute;margin-left: 10px;margin-top: 10px;background-color: rgba(171, 116, 15, 0.581);width: 984px;height:40px">
-                            <h2 style="margin-left: 15px;">班级简介</h2>
-                            <p class="texts" style="margin-left: 350px;margin-right: 25px;">经外2025届八班，今年九月即将美名远洋，声震天地，因为他们即将成为爸爸班。</p>
-                
-                        </div>
-                    </div>
-                    <div style="width:100%;height: 500px;">
-                        <p style="text-align: left;"><img src="./imgs/badge_class.jpg" style="margin-top: 130px;width: 300px;height: auto;margin-left: 30px;border-radius: 10px;"></p>
+                <div style="width: 100%;height: 500px;"> <!--图片块-->
+                    <p style="text-align: right;"><img src="./imgs/4.jpg"
+                            style="margin-top: 100px; width: 300px;height: auto;margin-right: 20px;border-radius:10px">
+                    </p>
+
+                    <p style="text-align: left;"></p><img src="./imgs/7.jpg"
+                        style="margin-top: 10px; width: 300px;height: auto;margin-right: 650px;border-radius:10px"></p>
+
+                    <p style="text-align: right;"></p><img src="./imgs/5.jpg"
+                        style="margin-top:10px; width: 300px;height: auto;border-radius:10px;margin-left: 650px"></p>
+                </div>
+            </div>
+            <!--学校块结束-->
+            <br>
+            <hr color="black" style="width: 80%;height: 0.1px;">
+            <hr style=" width: 80%;height: 0.1px;" color="black">
+            <br>
+            <div id="class"> <!--班级简介块-->
+                <div
+                    style="position: absolute;margin-left: 10px;margin-top: 30px;background-color: rgba(179, 182, 0, 0.581);width: 984px;height: 45px;">
+                    <div
+                        style="text-align: left;position: absolute;margin-left: 10px;margin-top: 10px;background-color: rgba(171, 116, 15, 0.581);width: 984px;height:40px">
+                        <h2 style="margin-left: 15px;">班级简介</h2>
+                        <p class="texts" style="margin-left: 350px;margin-right: 25px;">
+                            经外2025届八班，今年九月即将美名远洋，声震天地，因为他们即将成为爸爸班。</p>
+
                     </div>
                 </div>
-                <!--班级块结束-->
-                <br>
-                <hr color="black" style="width: 80%;height: 0.1px;"><hr style=" width: 80%;height: 0.1px;" color="black">
-                <br>
+                <div style="width:100%;height: 500px;">
+                    <p style="text-align: left;"><img src="./imgs/badge_class.jpg"
+                            style="margin-top: 130px;width: 300px;height: auto;margin-left: 30px;border-radius: 10px;">
+                    </p>
+                </div>
             </div>
-            <!--最底层块结束-->
-            <div style="text-align: center;background-color: rgba(0, 0, 0, 0.704);width: 1024px;margin:auto;">
-                </br>
-                <strong>
-                    <!-- <p style="color: darkgrey;">班级板块文案提供者：2025届8班张浩哲</p> -->
-                    <a target="_blank" style="color: rgb(196, 196, 196);text-decoration:none;" href="https://mp.weixin.qq.com/s/cFmTFvKaUAT-fJBMQAxuvw">更多信息</a>
-                </strong>
-                </br></br>
-            </div>
-        </center>
-    </body>
+            <!--班级块结束-->
+            <br>
+            <hr color="black" style="width: 80%;height: 0.1px;">
+            <hr style=" width: 80%;height: 0.1px;" color="black">
+            <br>
+        </div>
+        <!--最底层块结束-->
+        <br>
+        <div style="text-align: center;background-color: rgba(0, 0, 0, 0.704);width: 1024px;margin:auto;">
+            </br>
+            <strong>
+                <a target="_blank" style="color: rgb(196, 196, 196);text-decoration:none;"
+                    href="https://mp.weixin.qq.com/s/cFmTFvKaUAT-fJBMQAxuvw">更多信息</a>
+            </strong>
+            </br></br>
+        </div>
+    </center>
+</body>
+
 </html>
