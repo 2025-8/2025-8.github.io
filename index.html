@@ -20,6 +20,7 @@
             height: 1000px;
         }
         #menu{
+            /*导航栏样式*/
             position: fixed;
             width: 120px;
             height: 120px;
@@ -30,6 +31,7 @@
             z-index: 9999;
         }
         .menus{
+            /*导航栏条目样式*/
             display: block;
             width: 120px;
             height: 30px;
@@ -39,6 +41,7 @@
             text-align: center;
         }
         .menus:hover{
+            /*鼠标移到导航栏上改变颜色*/
             background-color: #4891a16e;
         }
         #menu-ul{
@@ -46,6 +49,7 @@
             padding: 0;
         }
         #class {
+            /*班级简介块样式*/
             background-color: rgba(151, 126, 1, 0.457);
             width: 1000px;
             height: 1000px;
@@ -59,14 +63,14 @@
         }
     </style>
     <script>
-        //判断设备
+        //判断设备，若为手机跳转至移动端页面
         var info = navigator.userAgent;
         if (/mobile/i.test(info)) {
             window.location.replace("./index_m.html");
         }
     </script>
 </head>
-
+<!--背景图片-->
 <body background="./bg/bg_1.jpg"
     style="background-repeat:no-repeat; background-attachment:fixed; background-size:100% 100%; ">
     <img src="./imgs/badge_school.png" style="margin-left:20px;float: left;"> <!--校徽图片-->
@@ -114,7 +118,7 @@
                         </p>
                     </div>
                 </div>
-                <div style="width: 100%;height: 500px;"> <!--图片块-->
+                <div style="width: 100%;height: 500px;"> <!--学校简介图片块-->
                     <p style="text-align: right;"><img src="./imgs/1.jpg"
                             style="margin-top: 100px; width: 300px;height: auto;margin-right: 20px;border-radius:10px">
                     </p>
@@ -130,7 +134,7 @@
             <br>
             <hr color="black" style="width: 80%;height: 0.1px;">
             <hr style=" width: 80%;height: 0.1px;" color="black">
-            <br>
+            <br><!--分割线-->
             <div id="class"> <!--班级简介块-->
                 <div
                     style="position: absolute;margin-left: 10px;margin-top: 30px;background-color: rgba(179, 182, 0, 0.581);width: 984px;height: 45px;">
@@ -142,7 +146,8 @@
 
                     </div>
                 </div>
-                <div style="width:100%;height: 500px;">
+                <div style="width:100%;height: 500px;"> <!--班级简介图片块-->
+                    <!--班徽图片-->
                     <p style="text-align: left;"><img src="./imgs/badge_class.jpg"
                             style="margin-top: 130px;width: 300px;height: auto;margin-left: 30px;border-radius: 10px;">
                     </p>
@@ -152,17 +157,20 @@
             <br>
             <hr color="black" style="width: 80%;height: 0.1px;">
             <hr style=" width: 80%;height: 0.1px;" color="black">
-            <br>
+            <br><!--分割线-->
         </div>
         <!--最底层块结束-->
         <br>
-        <div id="foot" style="text-align: center;background-color: rgba(0, 0, 0, 0.704);width: 1024px;margin:auto;">
+        <div style="text-align: center;background-color: rgba(0, 0, 0, 0.704);width: 1024px;height: 170px;">
             </br>
             <strong>
+                <p style="color: rgb(120, 120, 120);margin: 20px;">经外时代&nbsp;&nbsp;八班最帅&nbsp;&nbsp;团结友爱&nbsp;&nbsp;百战不殆</p>
+                <br>
                 <a target="_blank" style="color: rgb(196, 196, 196);text-decoration:none;"
                     href="./wechat_articles.html">更多信息</a>
+                <!-- <br> -->
             </strong>
-            </br></br>
+            <br>
         </div>
     </center>
 </body>
