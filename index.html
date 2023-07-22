@@ -106,6 +106,26 @@
             else img_id+=1;
             change_img()
         }
+
+        //预加载展示图片
+        var url="https://cn.kstore.space/download/3696/2025-8";
+        var images = new Array()  
+            function preload() {  
+                for (i = 0; i < preload.arguments.length; i++) {  
+                    images[i] = new Image()  
+                    images[i].src = preload.arguments[i]  
+                }  
+            }  
+            preload(
+                url+"/imgs/class/1.jpg",  
+                url+"/imgs/class/2.jpg",  
+                url+"/imgs/class/3.jpg",  
+                url+"/imgs/class/4.jpg",  
+                url+"/imgs/class/5.jpg",  
+                url+"/imgs/class/6.jpg",  
+                url+"/imgs/class/7.jpg",  
+                url+"/imgs/class/8.jpg",  
+            );
     </script>
 </head>
 <!--背景图片-->
