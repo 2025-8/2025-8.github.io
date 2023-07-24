@@ -23,8 +23,8 @@
             /*导航栏样式*/
             position: fixed;
             width: 120px;
+            /* height: 180px; */
             height: 150px;
-            /* height: 120px; */
             border: 3px solid rgba(148, 212, 183, 0.482);
             background-color: rgba(114, 155, 156, 0.44);
             margin-left: 88%;
@@ -82,7 +82,8 @@
             border:10px solid#4891a16e;
         }
     </style>
-    <script>
+    <script  type="text/javascript">
+        
         // 判断设备，若为手机跳转至移动端页面
         var info = navigator.userAgent;
         if (/mobile/i.test(info)) {
@@ -90,42 +91,44 @@
         }
 
         //轮播图图片切换
-        
+        var SUM_IMG=9;
+        var img_id=7;
+        var texts=["",
+                "录课中",
+                "参观学校女红馆",
+                "在大报告厅",
+                "合唱比赛",
+                "军训会操后合影",
+                "军训中",
+                "早晨跑操前背书",
+                "主持升旗仪式后合影",
+                "体艺节开幕式候场",
+                ];
         function change_img(){
             var show_img=document.getElementById("show");
+            var show_text=document.getElementById("show_text");
             show_img.src="https://cn.kstore.space/download/3696/2025-8/imgs/class/"+img_id.toString()+".jpg";
+            show_text.innerHTML=texts[img_id];
         }
-        var img_id=7;
         function left_img(){
-            if (img_id==1)img_id=8;
+            if (img_id==1)img_id=SUM_IMG;
             else img_id-=1;
             change_img()
         }
         function right_img(){
-            if (img_id==8)img_id=1;
+            if (img_id==SUM_IMG)img_id=1;
             else img_id+=1;
             change_img()
         }
 
         //预加载展示图片
-        var url="https://cn.kstore.space/download/3696/2025-8";
-        var images = new Array()  
-            function preload() {  
-                for (i = 0; i < preload.arguments.length; i++) {  
-                    images[i] = new Image()  
-                    images[i].src = preload.arguments[i]  
-                }  
-            }  
-            preload(
-                url+"/imgs/class/1.jpg",  
-                url+"/imgs/class/2.jpg",  
-                url+"/imgs/class/3.jpg",  
-                url+"/imgs/class/4.jpg",  
-                url+"/imgs/class/5.jpg",  
-                url+"/imgs/class/6.jpg",  
-                url+"/imgs/class/7.jpg",  
-                url+"/imgs/class/8.jpg",  
-            );
+        var url="https://cn.kstore.space/download/3696/2025-8/imgs/class/";
+        // url="https://cn.kstore.space/download/3696/2025-8/imgs/class/";
+        var images = new Array();
+        for (i = 1; i <= SUM_IMG; i++){  
+            images[i] = new Image();
+            images[i].src = url+i.toString()+".jpg";
+        }
     </script>
 </head>
 <!--背景图片-->
@@ -137,6 +140,7 @@
             <li><a class="menus" href="#school">学校简介</a></li>
             <li><a class="menus" href="#class">班级简介</a></li>
             <li><a class="menus" href="#class_show">班级风采</a></li>
+            <!-- <li><a class="menus">个人风采</a></li> -->
             <li><a class="menus" target="_blank" href="./wechat_articles.html">更多信息</a></li>
         </ul>
     </div>
@@ -215,16 +219,15 @@
                                 <button type="button" onclick="left_img()" id="left"><</button>
                             </div>
                             <div style="display:inline-block">
-                                <img id="show" src="https://cn.kstore.space/download/3696/2025-8/imgs/class/7.jpg"></img>
+                                <img id="show"></img>
                             </div>
                             <div style="text-align: left;float: right;height: 410px;margin-right: 20px;"><!--右按钮-->
                                 <button type="button" onclick="right_img()" id="right">></button>
                             </div>
-                                
+                            <p id="show_text"></p>
                         </div>
                     </div>
                 </div>
-                
                 <div style="width:100%;height: 500px;"> <!--班级简介图片块-->
                     <!--班徽图片-->
                     <p style="text-align: left;"><img src="https://cn.kstore.space/download/3696/2025-8/imgs/badge_class.jpg"
@@ -247,11 +250,13 @@
                 <br>
                 <a target="_blank" style="color: rgb(196, 196, 196);text-decoration:none;"
                     href="./wechat_articles.html">更多信息</a>
-                <!-- <br> -->
             </strong>
             <br>
         </div>
     </center>
+    <script>
+        change_img();
+    </script>
 </body>
 
 </html>
