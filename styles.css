@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 #root {
     /*最底层块样式*/
     background-color: hwb(0 73% 27% / 0.486);
