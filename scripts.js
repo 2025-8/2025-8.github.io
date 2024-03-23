@@ -6,13 +6,13 @@ if (/mobile/i.test(info)) {
 }
 
 //轮播图图片切换
-var SUM_IMG=13;
+var SUM_IMG=14;
 var img_id=7;
 function change_img(){
     var show_img=document.getElementById("show");
     var show_text=document.getElementById("show_text");
     var cd="https://cn.kstore.space/download/3696/2025-8/imgs/class/";
-    // cd="./"
+    cd="./imgs/class/"
     show_img.src=cd+img_id.toString()+".jpg";
     show_text.innerHTML=texts[img_id];
 }
