@@ -12,7 +12,7 @@ function change_img(){
     var show_img=document.getElementById("show");
     var show_text=document.getElementById("show_text");
     var cd="https://cn.kstore.space/download/3696/2025-8/imgs/class/";
-    cd="./imgs/class/"
+    // cd="./imgs/class/"
     show_img.src=cd+img_id.toString()+".jpg";
     show_text.innerHTML=texts[img_id];
 }
